@@ -23,4 +23,12 @@ public class String2 {
 
         return stringForVerification.startsWith("xyz", start2);
     }
+
+    public static String oneTwo(String str) {
+        StringBuilder result = new StringBuilder();
+        for(int i = 0; i < str.length()-2; i += 3) {
+            result.append(str, i + 1, i + 3).append(str.charAt(i));
+        }
+        return result.toString();
+    }
 }
