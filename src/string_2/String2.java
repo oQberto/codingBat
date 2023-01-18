@@ -1,5 +1,4 @@
 package string_2;
-
 public class String2 {
     public static String repeatFront(String stringForCopy, int countOfRepeats) {
         StringBuilder result = new StringBuilder();
@@ -28,6 +27,19 @@ public class String2 {
         StringBuilder result = new StringBuilder();
         for(int i = 0; i < str.length()-2; i += 3) {
             result.append(str, i + 1, i + 3).append(str.charAt(i));
+        }
+        return result.toString();
+    }
+
+    public static String plusOut(String stringToReplace, String unchangedPartOfString) {
+        StringBuilder result = new StringBuilder("");
+        for (int i = 0; i < stringToReplace.length(); i++) {
+            if (i < stringToReplace.length() - unchangedPartOfString.length() + 1 && stringToReplace.startsWith(unchangedPartOfString, i)) {
+                result.append(unchangedPartOfString);
+                i += unchangedPartOfString.length() - 1;
+            } else {
+                result.append("+");
+            }
         }
         return result.toString();
     }
