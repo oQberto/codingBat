@@ -1,5 +1,19 @@
 package string_2;
 public class String2 {
+
+    public static boolean catDog(String stringToVerify) {
+        int catCount = 0;
+        int dogCount = 0;
+        for (int i = 0; i < stringToVerify.length(); i++) {
+            if (stringToVerify.startsWith("cat", i)) {
+                catCount++;
+            } else if (stringToVerify.startsWith("dog", i)) {
+                dogCount++;
+            }
+        }
+        return catCount == dogCount;
+    }
+
     public static String repeatFront(String stringForCopy, int countOfRepeats) {
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < countOfRepeats; i++) {

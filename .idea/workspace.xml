@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;oneTwo&quot; method&#10;&#10;Given a string, compute a new string by moving the first char to come after the next two chars, so &quot;abc&quot; yields &quot;bca&quot;. Repeat this process for each subsequent group of 3 chars, so &quot;abcdef&quot; yields &quot;bcaefd&quot;. Ignore any group of fewer than 3 chars at the end.&#10;&#10;&#10;oneTwo(&quot;abc&quot;) → &quot;bca&quot;&#10;oneTwo(&quot;tca&quot;) → &quot;cat&quot;&#10;oneTwo(&quot;tcagdo&quot;) → &quot;catdog&quot;">
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;plusOut&quot; method&#10;&#10;&#10;&#10;Given a string and a non-empty word string, return a version of the original String where all chars have been replaced by pluses (&quot;+&quot;), except for appearances of the word string which are preserved unchanged.&#10;&#10;&#10;plusOut(&quot;12xy34&quot;, &quot;xy&quot;) → &quot;++xy++&quot;&#10;plusOut(&quot;12xy34&quot;, &quot;1&quot;) → &quot;1+++++&quot;&#10;plusOut(&quot;12xy34xyabcxy&quot;, &quot;xy&quot;) → &quot;++xy++xy+++xy&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/string_2/String2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string_2/String2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673952375500</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add &quot;plusOut&quot; method&#10;&#10;&#10;&#10;Given a string and a non-empty word string, return a version of the original String where all chars have been replaced by pluses (&quot;+&quot;), except for appearances of the word string which are preserved unchanged.&#10;&#10;&#10;plusOut(&quot;12xy34&quot;, &quot;xy&quot;) → &quot;++xy++&quot;&#10;plusOut(&quot;12xy34&quot;, &quot;1&quot;) → &quot;1+++++&quot;&#10;plusOut(&quot;12xy34xyabcxy&quot;, &quot;xy&quot;) → &quot;++xy++xy+++xy&quot;">
+      <created>1674044769438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674044769438</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +97,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Add &quot;oneTwo&quot; method&#10;&#10;Given a string, compute a new string by moving the first char to come after the next two chars, so &quot;abc&quot; yields &quot;bca&quot;. Repeat this process for each subsequent group of 3 chars, so &quot;abcdef&quot; yields &quot;bcaefd&quot;. Ignore any group of fewer than 3 chars at the end.&#10;&#10;&#10;oneTwo(&quot;abc&quot;) → &quot;bca&quot;&#10;oneTwo(&quot;tca&quot;) → &quot;cat&quot;&#10;oneTwo(&quot;tcagdo&quot;) → &quot;catdog&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;oneTwo&quot; method&#10;&#10;Given a string, compute a new string by moving the first char to come after the next two chars, so &quot;abc&quot; yields &quot;bca&quot;. Repeat this process for each subsequent group of 3 chars, so &quot;abcdef&quot; yields &quot;bcaefd&quot;. Ignore any group of fewer than 3 chars at the end.&#10;&#10;&#10;oneTwo(&quot;abc&quot;) → &quot;bca&quot;&#10;oneTwo(&quot;tca&quot;) → &quot;cat&quot;&#10;oneTwo(&quot;tcagdo&quot;) → &quot;catdog&quot;" />
+    <MESSAGE value="Add &quot;plusOut&quot; method&#10;&#10;&#10;&#10;Given a string and a non-empty word string, return a version of the original String where all chars have been replaced by pluses (&quot;+&quot;), except for appearances of the word string which are preserved unchanged.&#10;&#10;&#10;plusOut(&quot;12xy34&quot;, &quot;xy&quot;) → &quot;++xy++&quot;&#10;plusOut(&quot;12xy34&quot;, &quot;1&quot;) → &quot;1+++++&quot;&#10;plusOut(&quot;12xy34xyabcxy&quot;, &quot;xy&quot;) → &quot;++xy++xy+++xy&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;plusOut&quot; method&#10;&#10;&#10;&#10;Given a string and a non-empty word string, return a version of the original String where all chars have been replaced by pluses (&quot;+&quot;), except for appearances of the word string which are preserved unchanged.&#10;&#10;&#10;plusOut(&quot;12xy34&quot;, &quot;xy&quot;) → &quot;++xy++&quot;&#10;plusOut(&quot;12xy34&quot;, &quot;1&quot;) → &quot;1+++++&quot;&#10;plusOut(&quot;12xy34xyabcxy&quot;, &quot;xy&quot;) → &quot;++xy++xy+++xy&quot;" />
   </component>
 </project>
