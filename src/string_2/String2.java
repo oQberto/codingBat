@@ -1,6 +1,28 @@
 package string_2;
 public class String2 {
 
+    public static String mixString(String firstStr, String secondStr) {
+        if (firstStr.equals("")) {
+            return secondStr;
+        } else if (secondStr.equals("")){
+            return firstStr;
+        }
+
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < firstStr.length();) {
+            result.append(firstStr.charAt(i)).append(secondStr.charAt(i));
+            i++;
+            if (i == firstStr.length() ) {
+                result.append(secondStr.substring(i));
+                break;
+            } else if (i == secondStr.length() ) {
+                result.append(firstStr.substring(i));
+                break;
+            }
+        }
+        return result.toString();
+    }
+
     public static boolean xyzThere(String stringToFind) {
         boolean isXYZ = false;
         for (int i = 0; i < stringToFind.length();) {
@@ -62,7 +84,7 @@ public class String2 {
     }
 
     public static String plusOut(String stringToReplace, String unchangedPartOfString) {
-        StringBuilder result = new StringBuilder("");
+        StringBuilder result = new StringBuilder();
         for (int i = 0; i < stringToReplace.length(); i++) {
             if (i < stringToReplace.length() - unchangedPartOfString.length() + 1 && stringToReplace.startsWith(unchangedPartOfString, i)) {
                 result.append(unchangedPartOfString);
