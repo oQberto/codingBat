@@ -1,6 +1,18 @@
 package string_2;
 public class String2 {
 
+    public static String repeatSeparator(String word, String separator, int repeatCount) {
+        if (repeatCount == 0) {
+            return "";
+        }
+
+        StringBuilder result = new StringBuilder(word);
+        for (int i = 0; i < repeatCount - 1; i++) {
+            result.append(separator).append(word);
+        }
+        return result.toString();
+    }
+
     public static String mixString(String firstStr, String secondStr) {
         if (firstStr.equals("")) {
             return secondStr;
