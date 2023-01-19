@@ -1,6 +1,22 @@
 package string_2;
 public class String2 {
 
+    public static boolean xyzThere(String stringToFind) {
+        boolean isXYZ = false;
+        for (int i = 0; i < stringToFind.length();) {
+            if (stringToFind.startsWith("xyz", i)) {
+                isXYZ = true;
+                i += 3;
+            } else if (stringToFind.startsWith(".xyz", i)) {
+                isXYZ = false;
+                i += 4;
+            } else {
+                i++;
+            }
+        }
+        return isXYZ;
+    }
+
     public static boolean catDog(String stringToVerify) {
         int catCount = 0;
         int dogCount = 0;
