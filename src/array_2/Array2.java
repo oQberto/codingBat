@@ -2,6 +2,14 @@ package array_2;
 
 public class Array2 {
 
+    public static int[] fizzArray(int arrayLength) {
+        int[] newArray = new int[arrayLength];
+        for (int i = 0; i < arrayLength; i++) {
+            newArray[i] = i;
+        }
+        return newArray;
+    }
+
     public static boolean lucky13(int[] array) {
         boolean isLucky = true;
         for (int element : array) {
