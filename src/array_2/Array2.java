@@ -2,6 +2,18 @@ package array_2;
 
 public class Array2 {
 
+    public static boolean no14(int[] array) {
+        int one = 0, four = 0;
+        for (int element : array) {
+            if (element == 1) {
+                one = 1;
+            } else if (element == 4) {
+                four = 4;
+            }
+        }
+        return one != 1 || four != 4;
+    }
+
     public static int[] fizzArray(int arrayLength) {
         int[] newArray = new int[arrayLength];
         for (int i = 0; i < arrayLength; i++) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;lucky13&quot; method&#10;&#10;Given an array of ints, return true if the array contains no 1's and no 3's.&#10;&#10;lucky13([0, 2, 4]) → true&#10;lucky13([1, 2, 3]) → false&#10;lucky13([1, 2, 4]) → false">
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;fizzArray&quot; method&#10;&#10;Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works.&#10;&#10;fizzArray(4) → [0, 1, 2, 3]&#10;fizzArray(1) → [0]&#10;fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array_2/Array2.java" afterDir="false" />
     </list>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674224943630</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add &quot;fizzArray&quot; method&#10;&#10;Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works.&#10;&#10;fizzArray(4) → [0, 1, 2, 3]&#10;fizzArray(1) → [0]&#10;fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+      <created>1674228121636</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674228121636</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,6 +153,7 @@
     <MESSAGE value="Add &quot;repeatSeparator&quot; method&#10;&#10;Given two strings, word and a separator sep, return a big string made of count occurrences of the word, separated by the separator string.&#10;&#10;repeatSeparator(&quot;Word&quot;, &quot;X&quot;, 3) → &quot;WordXWordXWord&quot;&#10;repeatSeparator(&quot;This&quot;, &quot;And&quot;, 2) → &quot;ThisAndThis&quot;&#10;repeatSeparator(&quot;This&quot;, &quot;And&quot;, 1) → &quot;This&quot;" />
     <MESSAGE value="Add &quot;sum13&quot; and &quot;countEvens&quot; methods" />
     <MESSAGE value="Add &quot;lucky13&quot; method&#10;&#10;Given an array of ints, return true if the array contains no 1's and no 3's.&#10;&#10;lucky13([0, 2, 4]) → true&#10;lucky13([1, 2, 3]) → false&#10;lucky13([1, 2, 4]) → false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;lucky13&quot; method&#10;&#10;Given an array of ints, return true if the array contains no 1's and no 3's.&#10;&#10;lucky13([0, 2, 4]) → true&#10;lucky13([1, 2, 3]) → false&#10;lucky13([1, 2, 4]) → false" />
+    <MESSAGE value="Add &quot;fizzArray&quot; method&#10;&#10;Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works.&#10;&#10;fizzArray(4) → [0, 1, 2, 3]&#10;fizzArray(1) → [0]&#10;fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;fizzArray&quot; method&#10;&#10;Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works.&#10;&#10;fizzArray(4) → [0, 1, 2, 3]&#10;fizzArray(1) → [0]&#10;fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" />
   </component>
 </project>
