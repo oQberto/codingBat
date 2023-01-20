@@ -1,7 +1,14 @@
 package array_2;
 
 public class Array2 {
-
+    /**
+     * Given an array of ints, return true if it contains no 1's or it contains no 4's.
+     * <p>
+     * no14([1, 2, 3]) → true
+     * no14([1, 2, 3, 4]) → false
+     * no14([2, 3, 4]) → true
+     *
+     */
     public static boolean no14(int[] array) {
         int one = 0, four = 0;
         for (int element : array) {
