@@ -4,6 +4,25 @@ public class Array2 {
 
     /**
      *
+     *Return true if the group of N numbers at the start and end of the array are the same. For example, with {5, 6, 45, 99, 13, 5, 6}, the ends are the same for n=0 and n=2, and false for n=1 and n=3. You may assume that n is in the range 0..nums.length inclusive.
+     *<p>
+     *sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false
+     *sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true
+     *sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false
+     */
+    public static boolean sameEnds(int[] array, int countOfComparedNumbers) {
+        boolean isSame = true;
+        int arrayStartElementCounter = 0;
+
+        for (int i = countOfComparedNumbers; i > 0; i--) {
+            isSame = array[arrayStartElementCounter] == array[array.length - i];
+            arrayStartElementCounter++;
+        }
+        return isSame;
+    }
+
+    /**
+     *
      *Given an array of ints, return true if the array contains either 3 even or 3 odd values all next to each other.
      *<p>
      *modThree([2, 1, 3, 5]) → true
