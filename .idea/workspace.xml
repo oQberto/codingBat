@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="test commit">
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;matchUp&quot; method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array_2/Array2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674230775987</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add &quot;matchUp&quot; method">
+      <created>1674237266272</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674237266272</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +178,7 @@
     <MESSAGE value="Add &quot;fizzArray&quot; method&#10;&#10;Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works.&#10;&#10;fizzArray(4) → [0, 1, 2, 3]&#10;fizzArray(1) → [0]&#10;fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" />
     <MESSAGE value="Add &quot;no14&quot; method&#10;&#10;Given an array of ints, return true if it contains no 1's or it contains no 4's.&#10;&#10;no14([1, 2, 3]) → true&#10;no14([1, 2, 3, 4]) → false&#10;no14([2, 3, 4]) → true" />
     <MESSAGE value="test commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
+    <MESSAGE value="Add &quot;matchUp&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;matchUp&quot; method" />
   </component>
 </project>

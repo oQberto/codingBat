@@ -3,7 +3,28 @@ package array_2;
 public class Array2 {
 
     /**
-     * Given arrays nums1 and nums2 of the same length, for every element in nums1, consider the corresponding element in nums2 (at the same index). Return the count of the number of times that the two elements differ by 2 or less, but are not equal.
+     *
+     *Given an array of ints, return true if the array contains either 3 even or 3 odd values all next to each other.
+     *<p>
+     *modThree([2, 1, 3, 5]) → true
+     *modThree([2, 1, 2, 5]) → false
+     *modThree([2, 4, 2, 5]) → true
+     */
+    public static boolean modThree(int[] array) {
+        for (int i = 0; i < array.length - 2; i++) {
+            if (array[i] % 2 == 0 && array[i + 1] % 2 == 0 && array[i + 2] % 2 == 0) {
+                return true;
+            } else if (array[i] % 2 != 0 && array[i + 1] % 2 != 0 && array[i + 2] % 2 != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Given arrays nums1 and nums2 of the same length, for every element in nums1, consider the corresponding
+     * element in nums2 (at the same index). Return the count of the number of times that the two elements differ
+     * by 2 or less, but are not equal.
      * <p>
      * matchUp([1, 2, 3], [2, 3, 10]) → 2
      * matchUp([1, 2, 3], [2, 3, 5]) → 3
