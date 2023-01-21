@@ -1,13 +1,35 @@
-package array_2;
+package com.codingbat.tasks.array_2;
 
 public class Array2 {
+
+    /**
+     *
+     *Return an array that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}.
+     * You may modify and return the given array, or return a new array.
+     * <p>
+     *shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]
+     *shiftLeft([1, 2]) → [2, 1]
+     *shiftLeft([1]) → [1]
+     */
+    public static int[] shiftLeft(int[] array) {
+        if (array.length == 0) {
+            return array;
+        }
+        int firstArrayElement = array[0];
+
+        for (int i = 0; i < array.length - 1; i++) {
+            array[i] = array[i + 1];
+            array[i + 1] = firstArrayElement;
+        }
+        return array;
+    }
 
     /**
      *
      *Return true if the group of N numbers at the start and end of the array are the same. For example,
      * with {5, 6, 45, 99, 13, 5, 6}, the ends are the same for n=0 and n=2, and false for n=1 and n=3.
      * You may assume that n is in the range 0..nums.length inclusive.
-     *<p>
+     * <p>
      *sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false
      *sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true
      *sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false

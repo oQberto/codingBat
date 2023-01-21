@@ -1,4 +1,4 @@
-package string_2;
+package com.codingbat.tasks.string_2;
 public class String2 {
 
     public static String repeatSeparator(String word, String separator, int repeatCount) {

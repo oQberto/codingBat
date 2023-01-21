@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;sameEnds&quot; method" />
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Correct description for &quot;sameEnds&quot; method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string_2/String2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codingbat/tasks/string_2/String2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674242069963</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Correct description for &quot;sameEnds&quot; method">
+      <created>1674242190400</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674242190400</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +203,7 @@
     <MESSAGE value="Add &quot;matchUp&quot; method" />
     <MESSAGE value="Add &quot;modThree&quot; method" />
     <MESSAGE value="Add &quot;sameEnds&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;sameEnds&quot; method" />
+    <MESSAGE value="Correct description for &quot;sameEnds&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct description for &quot;sameEnds&quot; method" />
   </component>
 </project>
