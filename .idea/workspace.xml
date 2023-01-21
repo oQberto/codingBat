@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;withoutTen&quot; method">
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;FizzBuzz&quot; method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" afterDir="false" />
@@ -20,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -193,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674306919945</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add &quot;FizzBuzz&quot; method">
+      <created>1674307995857</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674307995857</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +237,7 @@
     <MESSAGE value="Add &quot;shiftLeft&quot; method&#10;&#10;Return an array that is &quot;left shifted&quot; by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, or return a new array.&#10;&#10;shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]&#10;shiftLeft([1, 2]) → [2, 1]&#10;shiftLeft([1]) → [1]" />
     <MESSAGE value="Add &quot;post4&quot; method" />
     <MESSAGE value="Add &quot;withoutTen&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;withoutTen&quot; method" />
+    <MESSAGE value="Add &quot;FizzBuzz&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;FizzBuzz&quot; method" />
   </component>
 </project>

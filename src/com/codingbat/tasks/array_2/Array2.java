@@ -3,6 +3,31 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     *
+     *Given an array length 1 or more of ints, return the difference between the largest and smallest
+     *values in the array. Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods return the
+     *smaller or larger of two values.
+     * <p>
+     *bigDiff([10, 3, 5, 6]) → 7
+     *bigDiff([7, 2, 10, 9]) → 8
+     *bigDiff([2, 10, 7, 2]) → 8
+     */
+    public static int bigDif(int[] array) {
+        if (array.length == 0) {
+            return 0;
+        }
+
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < array.length; i++) {
+            max = Math.max(array[i], max);
+            min = Math.min(array[i], min);
+        }
+        return max - min;
+    }
+
+    /**
      * This is slightly more difficult version of the famous FizzBuzz problem which is sometimes given as a first
      * problem for job interviews. (See also: FizzBuzz Code.) Consider the series of numbers beginning at start and
      * running up to but not including end, so for example start=1 and end=5 gives the series 1, 2, 3, 4.
