@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;sum67&quot; method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;sum28&quot; method">
       <change beforePath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674310862450</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add &quot;sum28&quot; method">
+      <created>1674325039379</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674325039379</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +260,7 @@
     <MESSAGE value="Add &quot;FizzBuzz&quot; method" />
     <MESSAGE value="Add &quot;bigDif&quot; method" />
     <MESSAGE value="Add &quot;sum67&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;sum67&quot; method" />
+    <MESSAGE value="Add &quot;sum28&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;sum28&quot; method" />
   </component>
 </project>

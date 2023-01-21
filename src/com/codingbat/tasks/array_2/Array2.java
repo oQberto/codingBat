@@ -4,11 +4,33 @@ public class Array2 {
 
     /**
      *
+     *Given an array of ints, return true if every element is a 1 or a 4.
+     *
+     *only14([1, 4, 1, 4]) → true
+     *only14([1, 4, 2, 4]) → false
+     *only14([1, 1]) → true
+     * @param array
+     * @return
+     */
+    public static boolean only14(int[] array) {
+        boolean isOnly14 = true;
+        for (int element : array) {
+            if (!(element == 1 || element == 4)) {
+                isOnly14 = false;
+            }
+        }
+        return isOnly14;
+    }
+
+    /**
+     *
      *Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.
      * <p>
      *sum28([2, 3, 2, 2, 4, 2]) → true
      *sum28([2, 3, 2, 2, 4, 2, 2]) → false
      *sum28([1, 2, 3, 4]) → false
+     * @param array
+     * @return
      */
     public static boolean sum28(int[] array) {
         int sumOfAll2 = 0;
@@ -27,6 +49,8 @@ public class Array2 {
      * sum67([1, 2, 2]) → 5
      * sum67([1, 2, 2, 6, 99, 99, 7]) → 5
      * sum67([1, 1, 6, 7, 2]) → 4
+     * @param array
+     * @return
      */
     public static int sum67(int[] array) {
         int sumOfArrayElements = 0;
@@ -52,6 +76,8 @@ public class Array2 {
      *bigDiff([10, 3, 5, 6]) → 7
      *bigDiff([7, 2, 10, 9]) → 8
      *bigDiff([2, 10, 7, 2]) → 8
+     * @param array
+     * @return
      */
     public static int bigDif(int[] array) {
         if (array.length == 0) {
@@ -78,6 +104,9 @@ public class Array2 {
      * fizzBuzz(1, 6) → ["1", "2", "Fizz", "4", "Buzz"]
      * fizzBuzz(1, 8) → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
      * fizzBuzz(1, 11) → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
+     * @param start
+     * @param end
+     * @return
      */
     public static String[] fizzBuzz(int start, int end) {
         String[] result = new String[end - start];
@@ -106,6 +135,8 @@ public class Array2 {
      * withoutTen([1, 10, 10, 2]) → [1, 2, 0, 0]
      * withoutTen([10, 2, 10]) → [2, 0, 0]
      * withoutTen([1, 99, 10]) → [1, 99, 0]
+     * @param array
+     * @return
      */
     public static int[] withoutTen(int[] array) {
         int[] arrayWithoutTens = new int[array.length];
@@ -126,6 +157,8 @@ public class Array2 {
      * post4([2, 4, 1, 2]) → [1, 2]
      * post4([4, 1, 4, 2]) → [2]
      * post4([4, 4, 1, 2, 3]) → [1, 2, 3]
+     * @param array
+     * @return
      */
     public static int[] post4(int[] array) {
         if (array.length == 0) {
@@ -151,6 +184,8 @@ public class Array2 {
      * shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]
      * shiftLeft([1, 2]) → [2, 1]
      * shiftLeft([1]) → [1]
+     * @param array
+     * @return
      */
     public static int[] shiftLeft(int[] array) {
         if (array.length == 0) {
@@ -173,6 +208,9 @@ public class Array2 {
      * sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false
      * sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true
      * sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false
+     * @param array
+     * @param countOfComparedNumbers
+     * @return
      */
     public static boolean sameEnds(int[] array, int countOfComparedNumbers) {
         boolean isSame = true;
@@ -191,6 +229,8 @@ public class Array2 {
      * modThree([2, 1, 3, 5]) → true
      * modThree([2, 1, 2, 5]) → false
      * modThree([2, 4, 2, 5]) → true
+     * @param array
+     * @return
      */
     public static boolean modThree(int[] array) {
         for (int i = 0; i < array.length - 2; i++) {
@@ -211,6 +251,9 @@ public class Array2 {
      * matchUp([1, 2, 3], [2, 3, 10]) → 2
      * matchUp([1, 2, 3], [2, 3, 5]) → 3
      * matchUp([1, 2, 3], [2, 3, 3]) → 2
+     * @param array1
+     * @param array2
+     * @return
      */
     public static int matchUp(int[] array1, int[] array2) {
         int numberOfCoincidences = 0;
@@ -229,6 +272,8 @@ public class Array2 {
      * no14([1, 2, 3]) → true
      * no14([1, 2, 3, 4]) → false
      * no14([2, 3, 4]) → true
+     * @param array
+     * @return
      */
     public static boolean no14(int[] array) {
         int one = 0, four = 0;
