@@ -3,14 +3,43 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
-     *
-     *Return a version of the given array where all the 10's have been removed. The remaining elements should shift
-     *left towards the start of the array as needed, and the empty spaces an end of the array should be 0.
+     * This is slightly more difficult version of the famous FizzBuzz problem which is sometimes given as a first
+     * problem for job interviews. (See also: FizzBuzz Code.) Consider the series of numbers beginning at start and
+     * running up to but not including end, so for example start=1 and end=5 gives the series 1, 2, 3, 4.
+     * Return a new String[] array containing the string form of these numbers, except for multiples of 3, use "Fizz"
+     * instead of the number, for multiples of 5 use "Buzz", and for multiples of both 3 and 5 use "FizzBuzz".
+     * <p>
+     * fizzBuzz(1, 6) → ["1", "2", "Fizz", "4", "Buzz"]
+     * fizzBuzz(1, 8) → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
+     * fizzBuzz(1, 11) → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
+     */
+    public static String[] fizzBuzz(int start, int end) {
+        String[] result = new String[end - start];
+        int firstArrayElement = start;
+
+        for (int i = 0; i < result.length; i++) {
+            if (firstArrayElement % 3 == 0 && firstArrayElement % 5 == 0) {
+                result[i] = "FizzBuzz";
+            } else if (firstArrayElement % 3 == 0) {
+                result[i] = "Fizz";
+            } else if (firstArrayElement % 5 == 0) {
+                result[i] = "Buzz";
+            } else {
+                result[i] = String.valueOf(firstArrayElement);
+            }
+            firstArrayElement++;
+        }
+        return result;
+    }
+
+    /**
+     * Return a version of the given array where all the 10's have been removed. The remaining elements should shift
+     * left towards the start of the array as needed, and the empty spaces an end of the array should be 0.
      * So {1, 10, 10, 2} yields {1, 2, 0, 0}. You may modify and return the given array or make a new array.
      * <p>
-     *withoutTen([1, 10, 10, 2]) → [1, 2, 0, 0]
-     *withoutTen([10, 2, 10]) → [2, 0, 0]
-     *withoutTen([1, 99, 10]) → [1, 99, 0]
+     * withoutTen([1, 10, 10, 2]) → [1, 2, 0, 0]
+     * withoutTen([10, 2, 10]) → [2, 0, 0]
+     * withoutTen([1, 99, 10]) → [1, 99, 0]
      */
     public static int[] withoutTen(int[] array) {
         int[] arrayWithoutTens = new int[array.length];
@@ -25,8 +54,8 @@ public class Array2 {
     }
 
     /**
-     *  Given a non-empty array of ints, return a new array containing the elements from the original array
-     *  that come after the last 4 in the original array. The original array will contain at least one 4.
+     * Given a non-empty array of ints, return a new array containing the elements from the original array
+     * that come after the last 4 in the original array. The original array will contain at least one 4.
      * <p>
      * post4([2, 4, 1, 2]) → [1, 2]
      * post4([4, 1, 4, 2]) → [2]
@@ -50,12 +79,12 @@ public class Array2 {
     }
 
     /**
-     *Return an array that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}.
+     * Return an array that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}.
      * You may modify and return the given array, or return a new array.
      * <p>
-     *shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]
-     *shiftLeft([1, 2]) → [2, 1]
-     *shiftLeft([1]) → [1]
+     * shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]
+     * shiftLeft([1, 2]) → [2, 1]
+     * shiftLeft([1]) → [1]
      */
     public static int[] shiftLeft(int[] array) {
         if (array.length == 0) {
@@ -71,14 +100,13 @@ public class Array2 {
     }
 
     /**
-     *
-     *Return true if the group of N numbers at the start and end of the array are the same. For example,
+     * Return true if the group of N numbers at the start and end of the array are the same. For example,
      * with {5, 6, 45, 99, 13, 5, 6}, the ends are the same for n=0 and n=2, and false for n=1 and n=3.
      * You may assume that n is in the range 0..nums.length inclusive.
      * <p>
-     *sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false
-     *sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true
-     *sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false
+     * sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false
+     * sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true
+     * sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false
      */
     public static boolean sameEnds(int[] array, int countOfComparedNumbers) {
         boolean isSame = true;
@@ -92,12 +120,11 @@ public class Array2 {
     }
 
     /**
-     *
-     *Given an array of ints, return true if the array contains either 3 even or 3 odd values all next to each other.
-     *<p>
-     *modThree([2, 1, 3, 5]) → true
-     *modThree([2, 1, 2, 5]) → false
-     *modThree([2, 4, 2, 5]) → true
+     * Given an array of ints, return true if the array contains either 3 even or 3 odd values all next to each other.
+     * <p>
+     * modThree([2, 1, 3, 5]) → true
+     * modThree([2, 1, 2, 5]) → false
+     * modThree([2, 4, 2, 5]) → true
      */
     public static boolean modThree(int[] array) {
         for (int i = 0; i < array.length - 2; i++) {
