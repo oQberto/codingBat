@@ -3,6 +3,31 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     *  Given a non-empty array of ints, return a new array containing the elements from the original array
+     *  that come after the last 4 in the original array. The original array will contain at least one 4.
+     * <p>
+     * post4([2, 4, 1, 2]) → [1, 2]
+     * post4([4, 1, 4, 2]) → [2]
+     * post4([4, 4, 1, 2, 3]) → [1, 2, 3]
+     */
+    public static int[] post4(int[] array) {
+        if (array.length == 0) {
+            return array;
+        }
+        int[] newArray = new int[0];
+        for (int i = array.length - 1; i >= 0; i--) {
+            if (array[i] == 4) {
+                newArray = new int[array.length - i - 1];
+                for (int j = 0; j < newArray.length; j++) {
+                    newArray[j] = array[i + j + 1];
+                }
+                break;
+            }
+        }
+        return newArray;
+    }
+
+    /**
      *
      *Return an array that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}.
      * You may modify and return the given array, or return a new array.

@@ -4,6 +4,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Array2.shiftLeft(new int[]{4, 6, 9, 3, 7})));
+        System.out.println(Arrays.toString(Array2.post4(new int[]{4, 4, 1, 2, 3})));
     }
 }
