@@ -3,9 +3,27 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     *
+     *Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.
+     * <p>
+     *sum28([2, 3, 2, 2, 4, 2]) → true
+     *sum28([2, 3, 2, 2, 4, 2, 2]) → false
+     *sum28([1, 2, 3, 4]) → false
+     */
+    public static boolean sum28(int[] array) {
+        int sumOfAll2 = 0;
+        for (int element : array) {
+            if (element == 2) {
+                sumOfAll2 += element;
+            }
+        }
+        return sumOfAll2 == 8;
+    }
+
+    /**
      * Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending
      * to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers.
-     *
+     * <p>
      * sum67([1, 2, 2]) → 5
      * sum67([1, 2, 2, 6, 99, 99, 7]) → 5
      * sum67([1, 1, 6, 7, 2]) → 4
