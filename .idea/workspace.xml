@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;shiftLeft&quot; method&#10;&#10;Return an array that is &quot;left shifted&quot; by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, or return a new array.&#10;&#10;shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]&#10;shiftLeft([1, 2]) → [2, 1]&#10;shiftLeft([1]) → [1]">
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;post4&quot; method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" afterDir="false" />
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674290125746</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add &quot;post4&quot; method">
+      <created>1674304191226</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674304191226</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +218,7 @@
     <MESSAGE value="Add &quot;sameEnds&quot; method" />
     <MESSAGE value="Correct description for &quot;sameEnds&quot; method" />
     <MESSAGE value="Add &quot;shiftLeft&quot; method&#10;&#10;Return an array that is &quot;left shifted&quot; by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, or return a new array.&#10;&#10;shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]&#10;shiftLeft([1, 2]) → [2, 1]&#10;shiftLeft([1]) → [1]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;shiftLeft&quot; method&#10;&#10;Return an array that is &quot;left shifted&quot; by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}. You may modify and return the given array, or return a new array.&#10;&#10;shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]&#10;shiftLeft([1, 2]) → [2, 1]&#10;shiftLeft([1]) → [1]" />
+    <MESSAGE value="Add &quot;post4&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;post4&quot; method" />
   </component>
 </project>

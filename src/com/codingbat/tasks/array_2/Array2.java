@@ -3,6 +3,28 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     *
+     *Return a version of the given array where all the 10's have been removed. The remaining elements should shift
+     *left towards the start of the array as needed, and the empty spaces an end of the array should be 0.
+     * So {1, 10, 10, 2} yields {1, 2, 0, 0}. You may modify and return the given array or make a new array.
+     * <p>
+     *withoutTen([1, 10, 10, 2]) → [1, 2, 0, 0]
+     *withoutTen([10, 2, 10]) → [2, 0, 0]
+     *withoutTen([1, 99, 10]) → [1, 99, 0]
+     */
+    public static int[] withoutTen(int[] array) {
+        int[] arrayWithoutTens = new int[array.length];
+        int count = 0;
+
+        for (int j : array) {
+            if (j != 10) {
+                arrayWithoutTens[count++] = j;
+            }
+        }
+        return arrayWithoutTens;
+    }
+
+    /**
      *  Given a non-empty array of ints, return a new array containing the elements from the original array
      *  that come after the last 4 in the original array. The original array will contain at least one 4.
      * <p>
@@ -28,7 +50,6 @@ public class Array2 {
     }
 
     /**
-     *
      *Return an array that is "left shifted" by one -- so {6, 2, 5, 3} returns {2, 5, 3, 6}.
      * You may modify and return the given array, or return a new array.
      * <p>
