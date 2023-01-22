@@ -3,6 +3,31 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     *
+     *For each multiple of 10 in the given array, change all the values following it to be that multiple of 10,
+     *until encountering another multiple of 10. So {2, 10, 3, 4, 20, 5} yields {2, 10, 10, 10, 20, 20}.
+     * <p>
+     *tenRun([2, 10, 3, 4, 20, 5]) → [2, 10, 10, 10, 20, 20]
+     *tenRun([10, 1, 20, 2]) → [10, 10, 20, 20]
+     *tenRun([10, 1, 9, 20]) → [10, 10, 10, 20]
+     * @param array
+     * @return
+     */
+    public static int[] tenRun(int[] array) {
+        int multipliOfTen;
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] % 10 == 0) {
+                multipliOfTen = array[i];
+                if (array[i + 1] % 10 != 0) {
+                    array[i + 1] = multipliOfTen;
+                }
+            }
+        }
+        return array;
+    }
+
+    /**
      * Return true if the array contains, somewhere, three increasing adjacent numbers
      * like .... 4, 5, 6, ... or 23, 24, 25.
      * <p>
