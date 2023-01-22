@@ -3,12 +3,37 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
-     *We'll say that a value is "everywhere" in an array if for every pair of adjacent elements in the array,
-     *at least one of the pair is that value. Return true if the given value is everywhere in the array.
+     * Given an array of ints, return true if the array contains two 7's next to each other, or there are two 7's
+     * separated by one element, such as with {7, 1, 7}.
+     * <p>
+     * has77([1, 7, 7]) → true
+     * has77([1, 7, 1, 7]) → true
+     * has77([1, 7, 1, 1, 7]) → false
      *
-     *isEverywhere([1, 2, 1, 3], 1) → true
-     *isEverywhere([1, 2, 1, 3], 2) → false
-     *isEverywhere([1, 2, 1, 3, 4], 1) → false
+     * @param array
+     * @return
+     */
+    public static boolean has77(int[] array) {
+        boolean is77 = false;
+
+        for (int i = 0; i < array.length - 2; i++) {
+            if (array[i] == 7 && (array[i + 1] == 7 || array[i + 2] == 7)) {
+                is77 = true;
+            } else if (array[i + 1] == 7 && array[i + 2] == 7) {
+                is77 = true;
+            }
+        }
+        return is77;
+    }
+
+    /**
+     * We'll say that a value is "everywhere" in an array if for every pair of adjacent elements in the array,
+     * at least one of the pair is that value. Return true if the given value is everywhere in the array.
+     * <p>
+     * isEverywhere([1, 2, 1, 3], 1) → true
+     * isEverywhere([1, 2, 1, 3], 2) → false
+     * isEverywhere([1, 2, 1, 3, 4], 1) → false
+     *
      * @param array
      * @param deciredValue
      * @return
@@ -25,12 +50,12 @@ public class Array2 {
     }
 
     /**
+     * Given an array of ints, return true if every element is a 1 or a 4.
+     * <p>
+     * only14([1, 4, 1, 4]) → true
+     * only14([1, 4, 2, 4]) → false
+     * only14([1, 1]) → true
      *
-     *Given an array of ints, return true if every element is a 1 or a 4.
-     *
-     *only14([1, 4, 1, 4]) → true
-     *only14([1, 4, 2, 4]) → false
-     *only14([1, 1]) → true
      * @param array
      * @return
      */
@@ -45,12 +70,12 @@ public class Array2 {
     }
 
     /**
-     *
-     *Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.
+     * Given an array of ints, return true if the sum of all the 2's in the array is exactly 8.
      * <p>
-     *sum28([2, 3, 2, 2, 4, 2]) → true
-     *sum28([2, 3, 2, 2, 4, 2, 2]) → false
-     *sum28([1, 2, 3, 4]) → false
+     * sum28([2, 3, 2, 2, 4, 2]) → true
+     * sum28([2, 3, 2, 2, 4, 2, 2]) → false
+     * sum28([1, 2, 3, 4]) → false
+     *
      * @param array
      * @return
      */
@@ -71,6 +96,7 @@ public class Array2 {
      * sum67([1, 2, 2]) → 5
      * sum67([1, 2, 2, 6, 99, 99, 7]) → 5
      * sum67([1, 1, 6, 7, 2]) → 4
+     *
      * @param array
      * @return
      */
@@ -90,14 +116,14 @@ public class Array2 {
     }
 
     /**
-     *
-     *Given an array length 1 or more of ints, return the difference between the largest and smallest
-     *values in the array. Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods return the
-     *smaller or larger of two values.
+     * Given an array length 1 or more of ints, return the difference between the largest and smallest
+     * values in the array. Note: the built-in Math.min(v1, v2) and Math.max(v1, v2) methods return the
+     * smaller or larger of two values.
      * <p>
-     *bigDiff([10, 3, 5, 6]) → 7
-     *bigDiff([7, 2, 10, 9]) → 8
-     *bigDiff([2, 10, 7, 2]) → 8
+     * bigDiff([10, 3, 5, 6]) → 7
+     * bigDiff([7, 2, 10, 9]) → 8
+     * bigDiff([2, 10, 7, 2]) → 8
+     *
      * @param array
      * @return
      */
@@ -126,6 +152,7 @@ public class Array2 {
      * fizzBuzz(1, 6) → ["1", "2", "Fizz", "4", "Buzz"]
      * fizzBuzz(1, 8) → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7"]
      * fizzBuzz(1, 11) → ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
+     *
      * @param start
      * @param end
      * @return
@@ -157,6 +184,7 @@ public class Array2 {
      * withoutTen([1, 10, 10, 2]) → [1, 2, 0, 0]
      * withoutTen([10, 2, 10]) → [2, 0, 0]
      * withoutTen([1, 99, 10]) → [1, 99, 0]
+     *
      * @param array
      * @return
      */
@@ -179,6 +207,7 @@ public class Array2 {
      * post4([2, 4, 1, 2]) → [1, 2]
      * post4([4, 1, 4, 2]) → [2]
      * post4([4, 4, 1, 2, 3]) → [1, 2, 3]
+     *
      * @param array
      * @return
      */
@@ -206,6 +235,7 @@ public class Array2 {
      * shiftLeft([6, 2, 5, 3]) → [2, 5, 3, 6]
      * shiftLeft([1, 2]) → [2, 1]
      * shiftLeft([1]) → [1]
+     *
      * @param array
      * @return
      */
@@ -230,6 +260,7 @@ public class Array2 {
      * sameEnds([5, 6, 45, 99, 13, 5, 6], 1) → false
      * sameEnds([5, 6, 45, 99, 13, 5, 6], 2) → true
      * sameEnds([5, 6, 45, 99, 13, 5, 6], 3) → false
+     *
      * @param array
      * @param countOfComparedNumbers
      * @return
@@ -251,6 +282,7 @@ public class Array2 {
      * modThree([2, 1, 3, 5]) → true
      * modThree([2, 1, 2, 5]) → false
      * modThree([2, 4, 2, 5]) → true
+     *
      * @param array
      * @return
      */
@@ -273,6 +305,7 @@ public class Array2 {
      * matchUp([1, 2, 3], [2, 3, 10]) → 2
      * matchUp([1, 2, 3], [2, 3, 5]) → 3
      * matchUp([1, 2, 3], [2, 3, 3]) → 2
+     *
      * @param array1
      * @param array2
      * @return
@@ -294,6 +327,7 @@ public class Array2 {
      * no14([1, 2, 3]) → true
      * no14([1, 2, 3, 4]) → false
      * no14([2, 3, 4]) → true
+     *
      * @param array
      * @return
      */
