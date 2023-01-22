@@ -3,6 +3,34 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     *Given an array of ints, return true if the value 3 appears in the array exactly 3 times, and no 3's are next to each other.
+     * <p>
+     *haveThree([3, 1, 3, 1, 3]) → true
+     *haveThree([3, 1, 3, 3]) → false
+     *haveThree([3, 4, 3, 3, 4]) → false
+     * @param array
+     * @return
+     */
+    public static boolean haveThree(int[] array) {
+        int countThrees = 0;
+        boolean a = false;
+
+        for (int i = 0; i < array.length; ++i) {
+            if (array[i] != 3) {
+                a = false;
+            }
+            if (array[i] == 3 && a == true) {
+                return false;
+            }
+            if (array[i] == 3 && a == false) {
+                a = true;
+                countThrees++;
+            }
+        }
+        return countThrees == 3;
+    }
+
+    /**
      * Given an array of ints, return true if the array contains two 7's next to each other, or there are two 7's
      * separated by one element, such as with {7, 1, 7}.
      * <p>
