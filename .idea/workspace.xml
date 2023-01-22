@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;has77&quot; method">
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="Add &quot;haveThree&quot; method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" afterDir="false" />
@@ -246,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674384695372</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add &quot;haveThree&quot; method">
+      <created>1674388192883</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1674388192883</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +268,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add &quot;oneTwo&quot; method&#10;&#10;Given a string, compute a new string by moving the first char to come after the next two chars, so &quot;abc&quot; yields &quot;bca&quot;. Repeat this process for each subsequent group of 3 chars, so &quot;abcdef&quot; yields &quot;bcaefd&quot;. Ignore any group of fewer than 3 chars at the end.&#10;&#10;&#10;oneTwo(&quot;abc&quot;) → &quot;bca&quot;&#10;oneTwo(&quot;tca&quot;) → &quot;cat&quot;&#10;oneTwo(&quot;tcagdo&quot;) → &quot;catdog&quot;" />
     <MESSAGE value="Add &quot;plusOut&quot; method&#10;&#10;&#10;&#10;Given a string and a non-empty word string, return a version of the original String where all chars have been replaced by pluses (&quot;+&quot;), except for appearances of the word string which are preserved unchanged.&#10;&#10;&#10;plusOut(&quot;12xy34&quot;, &quot;xy&quot;) → &quot;++xy++&quot;&#10;plusOut(&quot;12xy34&quot;, &quot;1&quot;) → &quot;1+++++&quot;&#10;plusOut(&quot;12xy34xyabcxy&quot;, &quot;xy&quot;) → &quot;++xy++xy+++xy&quot;" />
     <MESSAGE value="Add &quot;catDog&quot; method&#10;&#10;Return true if the string &quot;cat&quot; and &quot;dog&quot; appear the same number of times in the given string.&#10;&#10;&#10;catDog(&quot;catdog&quot;) → true&#10;catDog(&quot;catcat&quot;) → false&#10;catDog(&quot;1cat1cadodog&quot;) → true" />
     <MESSAGE value="Add &quot;xyzThere&quot; method&#10;&#10;Return true if the given string contains an appearance of &quot;xyz&quot; where the xyz is not directly preceeded by a period (.). So &quot;xxyz&quot; counts but &quot;x.xyz&quot; does not.&#10;&#10;xyzThere(&quot;abcxyz&quot;) → true&#10;xyzThere(&quot;abc.xyz&quot;) → false&#10;xyzThere(&quot;xyz.abc&quot;) → true" />
@@ -286,6 +292,7 @@
     <MESSAGE value="Add &quot;only14&quot; method" />
     <MESSAGE value="Add &quot;isEverywhere&quot; method" />
     <MESSAGE value="Add &quot;has77&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;has77&quot; method" />
+    <MESSAGE value="Add &quot;haveThree&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;haveThree&quot; method" />
   </component>
 </project>

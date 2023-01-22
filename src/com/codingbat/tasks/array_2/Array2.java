@@ -3,6 +3,28 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     * Return true if the array contains, somewhere, three increasing adjacent numbers
+     * like .... 4, 5, 6, ... or 23, 24, 25.
+     * <p>
+     * tripleUp([1, 4, 5, 6, 2]) → true
+     * tripleUp([1, 2, 3]) → true
+     * tripleUp([1, 2, 4]) → false
+     * @param array
+     * @return
+     */
+    public static boolean tripleUp(int[] array) {
+        boolean isTriple = false;
+
+        for (int i = 0; i < array.length - 2; i++) {
+            if (array[i] + 1 == array[i + 1] &&
+                    array[i] + 2 == array[i + 2]) {
+                isTriple = true;
+            }
+        }
+        return isTriple;
+    }
+
+    /**
      *Given an array of ints, return true if the value 3 appears in the array exactly 3 times, and no 3's are next to each other.
      * <p>
      *haveThree([3, 1, 3, 1, 3]) → true
