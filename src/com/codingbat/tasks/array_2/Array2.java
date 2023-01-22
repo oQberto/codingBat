@@ -4,6 +4,31 @@ public class Array2 {
 
     /**
      *
+     *We'll say that an element in an array is "alone" if there are values before and after it, and those values
+     * are different from it. Return a version of the given array where every instance of the given value which is
+     * alone is replaced by whichever value to its left or right is larger.
+     * <p>
+     *notAlone([1, 2, 3], 2) → [1, 3, 3]
+     *notAlone([1, 2, 3, 2, 5, 2], 2) → [1, 3, 3, 5, 5, 2]
+     *notAlone([3, 4], 3) → [3, 4]
+     * @param array
+     * @param arrayElementForVerify
+     * @return
+     */
+    public static int[] notAlone(int[] array, int arrayElementForVerify) {
+        for (int i = 1; i < array.length - 1; i++) {
+            if (array[i] == arrayElementForVerify) {
+                if (arrayElementForVerify != array[i - 1] &&
+                        arrayElementForVerify != array[i + 1]) {
+                    array[i] = Math.max(array[i - 1], array[i + 1]);
+                }
+            }
+        }
+        return array;
+    }
+
+    /**
+     *
      *For each multiple of 10 in the given array, change all the values following it to be that multiple of 10,
      *until encountering another multiple of 10. So {2, 10, 3, 4, 20, 5} yields {2, 10, 10, 10, 20, 20}.
      * <p>
