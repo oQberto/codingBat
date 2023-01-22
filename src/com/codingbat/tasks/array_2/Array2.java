@@ -3,6 +3,28 @@ package com.codingbat.tasks.array_2;
 public class Array2 {
 
     /**
+     *We'll say that a value is "everywhere" in an array if for every pair of adjacent elements in the array,
+     *at least one of the pair is that value. Return true if the given value is everywhere in the array.
+     *
+     *isEverywhere([1, 2, 1, 3], 1) → true
+     *isEverywhere([1, 2, 1, 3], 2) → false
+     *isEverywhere([1, 2, 1, 3, 4], 1) → false
+     * @param array
+     * @param deciredValue
+     * @return
+     */
+    public static boolean isEverywhere(int[] array, int deciredValue) {
+        boolean isEverywhere = true;
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (!(array[i] == deciredValue || array[i + 1] == deciredValue)) {
+                isEverywhere = false;
+            }
+        }
+        return isEverywhere;
+    }
+
+    /**
      *
      *Given an array of ints, return true if every element is a 1 or a 4.
      *
