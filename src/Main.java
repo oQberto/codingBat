@@ -4,6 +4,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Array2.notAlone(new int[]{1, 2, 3, 4}, 4)));
+        System.out.println(Arrays.toString(Array2.zeroMax(new int[]{0, 5, 0, 3})));
     }
 }

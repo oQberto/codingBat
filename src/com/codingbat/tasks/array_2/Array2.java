@@ -1,6 +1,37 @@
 package com.codingbat.tasks.array_2;
 
+import java.util.Arrays;
+
 public class Array2 {
+
+    /**
+     *
+     *Return a version of the given array where each zero value in the array is replaced by the
+     *largest odd value to the right of the zero in the array. If there is no odd value to the
+     *right of the zero, leave the zero as a zero.
+     * <p>
+     *zeroMax([0, 5, 0, 3]) → [5, 5, 3, 3]
+     *zeroMax([0, 4, 0, 3]) → [3, 4, 3, 3]
+     *zeroMax([0, 1, 0]) → [1, 1, 0]
+     * @param array
+     * @return
+     */
+    public static int[] zeroMax(int[] array) {
+        int maxOdd = 0;
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] == 0) {
+                for (int j = i + 1; j <= array.length - 1; j++) {
+                    if (array[j] % 2 != 0 && array[j] > maxOdd) {
+                        maxOdd = array[j];
+                    }
+                }
+                array[i] = maxOdd;
+                maxOdd = 0;
+            }
+        }
+        return array;
+    }
 
     /**
      *
