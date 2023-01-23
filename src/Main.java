@@ -4,6 +4,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Array2.zeroFront(new int[]{7, 0, 1, 0, 5})));
+        System.out.println(Arrays.toString(Array2.evenOdd(new int[]{3, 3, 2})));
     }
 }
