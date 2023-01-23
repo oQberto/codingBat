@@ -6,6 +6,33 @@ public class Array2 {
 
     /**
      *
+     *Given start and end numbers, return a new array containing the sequence of integers from start up to but
+     *not including end, so start=5 and end=10 yields {5, 6, 7, 8, 9}. The end number will be greater or equal
+     *to the start number.
+     * <p>
+     *fizzArray3(5, 10) → [5, 6, 7, 8, 9]
+     *fizzArray3(11, 18) → [11, 12, 13, 14, 15, 16, 17]
+     *fizzArray3(1, 3) → [1, 2]
+     * @param start
+     * @param end
+     * @return
+     */
+    public static int[] fizzArray3(int start, int end) {
+        if (end < start) {
+            return null;
+        }
+        int[] arrayOfInts = new int[end - start];
+        int arrayElement = 0;
+
+        for (int i = start; i < end; i++) {
+            arrayOfInts[arrayElement] = i;
+            arrayElement++;
+        }
+        return arrayOfInts;
+    }
+
+    /**
+     *
      *Given an array of ints, return true if every 2 that appears in the array is next to another 2.
      * <p>
      *twoTwo([4, 2, 2, 3]) → true
