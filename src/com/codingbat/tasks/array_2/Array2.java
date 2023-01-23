@@ -6,6 +6,26 @@ public class Array2 {
 
     /**
      *
+     *Given a number n, create and return a new string array of length n, containing the strings
+     *"0", "1" "2" .. through n-1. N may be 0, in which case just return a length 0 array.
+     * <p>
+     *fizzArray2(4) → ["0", "1", "2", "3"]
+     *fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+     *fizzArray2(2) → ["0", "1"]
+     * @param arrayLength
+     * @return
+     */
+    public static String[] fizzArray2(int arrayLength) {
+        String[] newStringsArray = new String[arrayLength];
+
+        for (int i = 0; i < newStringsArray.length; i++) {
+            newStringsArray[i] = String.valueOf(i);
+        }
+        return newStringsArray;
+    }
+
+    /**
+     *
      *Given an array of ints, return true if the number of 1's is greater than the number of 4's
      * <p>
      *more14([1, 4, 1]) → true
