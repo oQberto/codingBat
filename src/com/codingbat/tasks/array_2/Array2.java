@@ -20,10 +20,12 @@ public class Array2 {
         int temp = 0;
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0) {
-                array[i] = array[temp];
-                array[temp] = 0;
-                temp++;
+            for (int j = 0; j < array.length; j++) {
+                if (array[j] != 0) {
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
             }
         }
         return array;
