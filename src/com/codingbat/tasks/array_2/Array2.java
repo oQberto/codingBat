@@ -6,11 +6,44 @@ public class Array2 {
 
     /**
      *
-     *Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array.
+     *Given an array of ints, return true if every 2 that appears in the array is next to another 2.
      * <p>
-     *has12([1, 3, 2]) → true
-     *has12([3, 1, 2]) → true
-     *has12([3, 1, 4, 5, 2]) → true
+     *twoTwo([4, 2, 2, 3]) → true
+     *twoTwo([2, 2, 4]) → true
+     *twoTwo([2, 2, 4, 2]) → false
+     * @param array
+     * @return
+     */
+    public static boolean twoTwo(int[] array) {
+        if (array.length == 0) {
+            return true;
+        }
+
+        if (array.length == 1 && array[0] == 2) {
+            return false;
+        }
+
+        if (array[array.length - 1] == 2 && array[array.length - 2] != 2) {
+            return false;
+        }
+
+        for (int i = 1; i < array.length - 1; i++) {
+            if (array[i] == 2) {
+                if (array[i - 1] != 2 && array[i + 1] != 2) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array.
+     * <p>
+     * has12([1, 3, 2]) → true
+     * has12([3, 1, 2]) → true
+     * has12([3, 1, 4, 5, 2]) → true
+     *
      * @param array
      * @return
      */
@@ -30,12 +63,12 @@ public class Array2 {
     }
 
     /**
+     * Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.
+     * <p>
+     * either24([1, 2, 2]) → true
+     * either24([4, 4, 1]) → true
+     * either24([4, 4, 1, 2, 2]) → false
      *
-     *Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.
-     *
-     *either24([1, 2, 2]) → true
-     *either24([4, 4, 1]) → true
-     *either24([4, 4, 1, 2, 2]) → false
      * @param array
      * @return
      */
@@ -52,7 +85,7 @@ public class Array2 {
                 arrayHas44 = true;
             }
         }
-        if ( arrayHas22 && arrayHas44) {
+        if (arrayHas22 && arrayHas44) {
             arrayHas22Either44 = false;
         } else if (arrayHas22 || arrayHas44) {
             arrayHas22Either44 = true;
@@ -61,13 +94,13 @@ public class Array2 {
     }
 
     /**
-     *
-     *Given a number n, create and return a new string array of length n, containing the strings
-     *"0", "1" "2" .. through n-1. N may be 0, in which case just return a length 0 array.
+     * Given a number n, create and return a new string array of length n, containing the strings
+     * "0", "1" "2" .. through n-1. N may be 0, in which case just return a length 0 array.
      * <p>
-     *fizzArray2(4) → ["0", "1", "2", "3"]
-     *fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-     *fizzArray2(2) → ["0", "1"]
+     * fizzArray2(4) → ["0", "1", "2", "3"]
+     * fizzArray2(10) → ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+     * fizzArray2(2) → ["0", "1"]
+     *
      * @param arrayLength
      * @return
      */
@@ -81,12 +114,12 @@ public class Array2 {
     }
 
     /**
-     *
-     *Given an array of ints, return true if the number of 1's is greater than the number of 4's
+     * Given an array of ints, return true if the number of 1's is greater than the number of 4's
      * <p>
-     *more14([1, 4, 1]) → true
-     *more14([1, 4, 1, 4]) → false
-     *more14([1, 1]) → true
+     * more14([1, 4, 1]) → true
+     * more14([1, 4, 1, 4]) → false
+     * more14([1, 1]) → true
+     *
      * @param array
      * @return
      */
@@ -112,6 +145,7 @@ public class Array2 {
      * has22([1, 2, 2]) → true
      * has22([1, 2, 1, 2]) → false
      * has22([2, 1, 2]) → false
+     *
      * @param array
      * @return
      */
@@ -133,6 +167,7 @@ public class Array2 {
      * centeredAverage([1, 2, 3, 4, 100]) → 3
      * centeredAverage([1, 1, 5, 5, 10, 8, 7]) → 5
      * centeredAverage([-10, -4, -2, -4, -2, 0]) → -3
+     *
      * @param array
      * @return
      */
@@ -149,14 +184,14 @@ public class Array2 {
     }
 
     /**
-     *
-     *Return a version of the given array where each zero value in the array is replaced by the
-     *largest odd value to the right of the zero in the array. If there is no odd value to the
-     *right of the zero, leave the zero as a zero.
+     * Return a version of the given array where each zero value in the array is replaced by the
+     * largest odd value to the right of the zero in the array. If there is no odd value to the
+     * right of the zero, leave the zero as a zero.
      * <p>
-     *zeroMax([0, 5, 0, 3]) → [5, 5, 3, 3]
-     *zeroMax([0, 4, 0, 3]) → [3, 4, 3, 3]
-     *zeroMax([0, 1, 0]) → [1, 1, 0]
+     * zeroMax([0, 5, 0, 3]) → [5, 5, 3, 3]
+     * zeroMax([0, 4, 0, 3]) → [3, 4, 3, 3]
+     * zeroMax([0, 1, 0]) → [1, 1, 0]
+     *
      * @param array
      * @return
      */
@@ -178,14 +213,14 @@ public class Array2 {
     }
 
     /**
-     *
-     *We'll say that an element in an array is "alone" if there are values before and after it, and those values
+     * We'll say that an element in an array is "alone" if there are values before and after it, and those values
      * are different from it. Return a version of the given array where every instance of the given value which is
      * alone is replaced by whichever value to its left or right is larger.
      * <p>
-     *notAlone([1, 2, 3], 2) → [1, 3, 3]
-     *notAlone([1, 2, 3, 2, 5, 2], 2) → [1, 3, 3, 5, 5, 2]
-     *notAlone([3, 4], 3) → [3, 4]
+     * notAlone([1, 2, 3], 2) → [1, 3, 3]
+     * notAlone([1, 2, 3, 2, 5, 2], 2) → [1, 3, 3, 5, 5, 2]
+     * notAlone([3, 4], 3) → [3, 4]
+     *
      * @param array
      * @param arrayElementForVerify
      * @return
@@ -203,13 +238,13 @@ public class Array2 {
     }
 
     /**
-     *
-     *For each multiple of 10 in the given array, change all the values following it to be that multiple of 10,
-     *until encountering another multiple of 10. So {2, 10, 3, 4, 20, 5} yields {2, 10, 10, 10, 20, 20}.
+     * For each multiple of 10 in the given array, change all the values following it to be that multiple of 10,
+     * until encountering another multiple of 10. So {2, 10, 3, 4, 20, 5} yields {2, 10, 10, 10, 20, 20}.
      * <p>
-     *tenRun([2, 10, 3, 4, 20, 5]) → [2, 10, 10, 10, 20, 20]
-     *tenRun([10, 1, 20, 2]) → [10, 10, 20, 20]
-     *tenRun([10, 1, 9, 20]) → [10, 10, 10, 20]
+     * tenRun([2, 10, 3, 4, 20, 5]) → [2, 10, 10, 10, 20, 20]
+     * tenRun([10, 1, 20, 2]) → [10, 10, 20, 20]
+     * tenRun([10, 1, 9, 20]) → [10, 10, 10, 20]
+     *
      * @param array
      * @return
      */
@@ -234,6 +269,7 @@ public class Array2 {
      * tripleUp([1, 4, 5, 6, 2]) → true
      * tripleUp([1, 2, 3]) → true
      * tripleUp([1, 2, 4]) → false
+     *
      * @param array
      * @return
      */
@@ -250,11 +286,12 @@ public class Array2 {
     }
 
     /**
-     *Given an array of ints, return true if the value 3 appears in the array exactly 3 times, and no 3's are next to each other.
+     * Given an array of ints, return true if the value 3 appears in the array exactly 3 times, and no 3's are next to each other.
      * <p>
-     *haveThree([3, 1, 3, 1, 3]) → true
-     *haveThree([3, 1, 3, 3]) → false
-     *haveThree([3, 4, 3, 3, 4]) → false
+     * haveThree([3, 1, 3, 1, 3]) → true
+     * haveThree([3, 1, 3, 3]) → false
+     * haveThree([3, 4, 3, 3, 4]) → false
+     *
      * @param array
      * @return
      */
