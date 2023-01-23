@@ -5,6 +5,24 @@ import java.util.Arrays;
 public class Array2 {
 
     /**
+     * Given an array of ints, return true if the array contains a 2 next to a 2 somewhere.
+     * <p>
+     * has22([1, 2, 2]) → true
+     * has22([1, 2, 1, 2]) → false
+     * has22([2, 1, 2]) → false
+     * @param array
+     * @return
+     */
+    public static boolean has22(int[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] == 2 && array[i] == array[i + 1]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Return the "centered" average of an array of ints, which we'll say is the mean average of the values,
      * except ignoring the largest and smallest values in the array. If there are multiple copies of the smallest
      * value, ignore just one copy, and likewise for the largest value. Use int division to produce the final average.
