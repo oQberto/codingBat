@@ -5,6 +5,35 @@ import java.util.Arrays;
 public class Array2 {
 
     /**
+     * Given a non-empty array of ints, return a new array containing the elements from the original array
+     * that come before the first 4 in the original array. The original array will contain at least one 4.
+     * Note that it is valid in java to create an array of length 0.
+     * <p>
+     * pre4([1, 2, 4, 1]) → [1, 2]
+     * pre4([3, 1, 4]) → [3, 1]
+     * pre4([1, 4, 4]) → [1]
+     * @param array
+     * @return
+     */
+    public static int[] pre4(int[] array) {
+        int[] arrayOfElementWitoutFour;
+        int noFour = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 4) {
+                break;
+            }
+            noFour++;
+        }
+
+        arrayOfElementWitoutFour = new int[noFour];
+        for (int i = 0; i < arrayOfElementWitoutFour.length; i++) {
+            arrayOfElementWitoutFour[i] = array[i];
+        }
+        return arrayOfElementWitoutFour;
+    }
+
+    /**
      *
      *Given start and end numbers, return a new array containing the sequence of integers from start up to but
      *not including end, so start=5 and end=10 yields {5, 6, 7, 8, 9}. The end number will be greater or equal
