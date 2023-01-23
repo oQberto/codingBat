@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="feat: add &quot;centeredAverage&quot; method">
+    <list default="true" id="742ebebe-ab91-47be-9371-e7445dc91f1a" name="Changes" comment="feat: add &quot;has22&quot; method">
       <change beforePath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codingbat/tasks/array_2/Array2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -286,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674458555386</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat: add &quot;has22&quot; method">
+      <created>1674458913576</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674458913576</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,7 +308,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add &quot;sum13&quot; and &quot;countEvens&quot; methods" />
     <MESSAGE value="Add &quot;lucky13&quot; method&#10;&#10;Given an array of ints, return true if the array contains no 1's and no 3's.&#10;&#10;lucky13([0, 2, 4]) → true&#10;lucky13([1, 2, 3]) → false&#10;lucky13([1, 2, 4]) → false" />
     <MESSAGE value="Add &quot;fizzArray&quot; method&#10;&#10;Given a number n, create and return a new int array of length n, containing the numbers 0, 1, 2, ... n-1. The given n may be 0, in which case just return a length 0 array. You do not need a separate if-statement for the length-0 case; the for-loop should naturally execute 0 times in that case, so it just works.&#10;&#10;fizzArray(4) → [0, 1, 2, 3]&#10;fizzArray(1) → [0]&#10;fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" />
     <MESSAGE value="Add &quot;no14&quot; method&#10;&#10;Given an array of ints, return true if it contains no 1's or it contains no 4's.&#10;&#10;no14([1, 2, 3]) → true&#10;no14([1, 2, 3, 4]) → false&#10;no14([2, 3, 4]) → true" />
@@ -326,6 +332,7 @@
     <MESSAGE value="feat: add &quot;tenRun&quot; method" />
     <MESSAGE value="feat: add &quot;zeroMax&quot; method" />
     <MESSAGE value="feat: add &quot;centeredAverage&quot; method" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add &quot;centeredAverage&quot; method" />
+    <MESSAGE value="feat: add &quot;has22&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add &quot;has22&quot; method" />
   </component>
 </project>

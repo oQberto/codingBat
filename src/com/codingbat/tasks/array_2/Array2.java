@@ -5,6 +5,32 @@ import java.util.Arrays;
 public class Array2 {
 
     /**
+     *
+     *Given an array of ints, return true if the number of 1's is greater than the number of 4's
+     * <p>
+     *more14([1, 4, 1]) → true
+     *more14([1, 4, 1, 4]) → false
+     *more14([1, 1]) → true
+     * @param array
+     * @return
+     */
+    public static boolean more14(int[] array) {
+        boolean moreOnesThanFours = false;
+        int countOnes = 0;
+        int countFours = 0;
+
+        for (int element : array) {
+            if (element == 1) {
+                countOnes++;
+            } else if (element == 4) {
+                countFours++;
+            }
+        }
+        moreOnesThanFours = countOnes > countFours;
+        return moreOnesThanFours;
+    }
+
+    /**
      * Given an array of ints, return true if the array contains a 2 next to a 2 somewhere.
      * <p>
      * has22([1, 2, 2]) → true
