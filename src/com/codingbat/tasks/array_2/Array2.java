@@ -6,6 +6,37 @@ public class Array2 {
 
     /**
      *
+     *Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.
+     *
+     *either24([1, 2, 2]) → true
+     *either24([4, 4, 1]) → true
+     *either24([4, 4, 1, 2, 2]) → false
+     * @param array
+     * @return
+     */
+
+    public static boolean either24(int[] array) {
+        boolean arrayHas22Either44 = false;
+        boolean arrayHas22 = false;
+        boolean arrayHas44 = false;
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] == 2 && array[i + 1] == array[i]) {
+                arrayHas22 = true;
+            } else if (array[i] == 4 && array[i + 1] == array[i]) {
+                arrayHas44 = true;
+            }
+        }
+        if ( arrayHas22 && arrayHas44) {
+            arrayHas22Either44 = false;
+        } else if (arrayHas22 || arrayHas44) {
+            arrayHas22Either44 = true;
+        }
+        return arrayHas22Either44;
+    }
+
+    /**
+     *
      *Given a number n, create and return a new string array of length n, containing the strings
      *"0", "1" "2" .. through n-1. N may be 0, in which case just return a length 0 array.
      * <p>
