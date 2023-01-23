@@ -1,9 +1,7 @@
 import com.codingbat.tasks.array_2.Array2;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Array2.zeroMax(new int[]{0, 5, 0, 3})));
+        System.out.println(Array2.centeredAverage(new int[]{-10, -4, -2, -4, -2, 0}));
     }
 }

@@ -5,6 +5,30 @@ import java.util.Arrays;
 public class Array2 {
 
     /**
+     * Return the "centered" average of an array of ints, which we'll say is the mean average of the values,
+     * except ignoring the largest and smallest values in the array. If there are multiple copies of the smallest
+     * value, ignore just one copy, and likewise for the largest value. Use int division to produce the final average.
+     * You may assume that the array is length 3 or more.
+     * <p>
+     * centeredAverage([1, 2, 3, 4, 100]) → 3
+     * centeredAverage([1, 1, 5, 5, 10, 8, 7]) → 5
+     * centeredAverage([-10, -4, -2, -4, -2, 0]) → -3
+     * @param array
+     * @return
+     */
+    public static int centeredAverage(int[] array) {
+        int centeretAverage = 0;
+        int amountOfArrayElements = 0;
+
+        Arrays.sort(array);
+        for (int i = 1; i <= array.length - 2; i++) {
+            amountOfArrayElements += array[i];
+        }
+        centeretAverage = amountOfArrayElements / (array.length - 2);
+        return centeretAverage;
+    }
+
+    /**
      *
      *Return a version of the given array where each zero value in the array is replaced by the
      *largest odd value to the right of the zero in the array. If there is no odd value to the
