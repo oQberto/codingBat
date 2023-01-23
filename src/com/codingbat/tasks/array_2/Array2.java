@@ -5,6 +5,31 @@ import java.util.Arrays;
 public class Array2 {
 
     /**
+     * Return an array that contains the exact same numbers as the given array, but rearranged so
+     * that all the zeros are grouped at the start of the array. The order of the non-zero numbers
+     * does not matter. So {1, 0, 0, 1} becomes {0 ,0, 1, 1}. You may modify and return the given
+     * array or make a new array.
+     * <p>
+     * zeroFront([1, 0, 0, 1]) → [0, 0, 1, 1]
+     * zeroFront([0, 1, 1, 0, 1]) → [0, 0, 1, 1, 1]
+     * zeroFront([1, 0]) → [0, 1]
+     * @param array
+     * @return
+     */
+    public static int[] zeroFront(int[] array) {
+        int temp = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                array[i] = array[temp];
+                array[temp] = 0;
+                temp++;
+            }
+        }
+        return array;
+    }
+
+    /**
      * Given a non-empty array of ints, return a new array containing the elements from the original array
      * that come before the first 4 in the original array. The original array will contain at least one 4.
      * Note that it is valid in java to create an array of length 0.
