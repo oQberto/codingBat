@@ -6,6 +6,31 @@ public class Array2 {
 
     /**
      *
+     *Given an array of ints, return true if there is a 1 in the array with a 2 somewhere later in the array.
+     * <p>
+     *has12([1, 3, 2]) → true
+     *has12([3, 1, 2]) → true
+     *has12([3, 1, 4, 5, 2]) → true
+     * @param array
+     * @return
+     */
+    public static boolean has12(int[] array) {
+        boolean foundOne = false;
+        boolean foundTwo = false;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 1) {
+                foundOne = true;
+            }
+            if (array[i] == 2 && foundOne) {
+                foundTwo = true;
+            }
+        }
+        return foundOne && foundTwo;
+    }
+
+    /**
+     *
      *Given an array of ints, return true if the array contains a 2 next to a 2 or a 4 next to a 4, but not both.
      *
      *either24([1, 2, 2]) → true
